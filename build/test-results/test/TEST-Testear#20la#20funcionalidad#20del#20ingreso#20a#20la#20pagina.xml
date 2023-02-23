@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Testear la funcionalidad del ingreso a la pagina" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-23T00:17:00" hostname="LAPTOP-D2E3CRT8" time="2.6">
+  <properties/>
+  <testcase name="Como usuario deseo ingresar a la pagina SwangLabs" classname="Testear la funcionalidad del ingreso a la pagina" time="2.6"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 109.0.5414.74 (e7c5703604daa9cc128ccf5a5d3e993513758913-refs/branch-heads/5414@{#1172}) on port 40190
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+[1677111422.307][WARNING]: This version of ChromeDriver has not been tested with Chrome version 110.
+Feb 22, 2023 9:17:02 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>
