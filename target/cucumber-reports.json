@@ -3,7 +3,28 @@
     "line": 2,
     "elements": [
       {
-        "line": 12,
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2801663900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Estoy en la pagina de swaglabs",
+            "match": {
+              "location": "SwangSteps.ingresoALaPagina()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 16,
         "name": "Como usuario deseo ingresar a la pagina SwangLabs",
         "description": "",
         "id": "testear-la-funcionalidad-del-ingreso-a-la-pagina;como-usuario-deseo-ingresar-a-la-pagina-swanglabs;;2",
@@ -12,58 +33,44 @@
         "steps": [
           {
             "result": {
-              "duration": 1981969700,
+              "duration": 286172600,
               "status": "passed"
             },
-            "line": 5,
-            "name": "Estoy en la pagina de swaglabs",
-            "match": {
-              "location": "SwangSteps.ingresoALaPagina()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 270864500,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "Ingreso las credenciales del standard_user",
+            "line": 11,
+            "name": "Ingreso las credenciales del usuario standard_user y password secret_sauce",
             "match": {
               "arguments": [
                 {
                   "val": "standard_user",
-                  "offset": 29
-                }
-              ],
-              "location": "SwangSteps.colocoElUsuario(String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 186716300,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "Ingreso la secret_sauce",
-            "match": {
-              "arguments": [
+                  "offset": 37
+                },
                 {
                   "val": "secret_sauce",
-                  "offset": 11
+                  "offset": 62
                 }
               ],
-              "location": "SwangSteps.colocoPassword(String)"
+              "location": "SwangSteps.colocoElUsuario(String,String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 60936300,
+              "duration": 120290500,
               "status": "passed"
             },
-            "line": 8,
+            "line": 12,
+            "name": "Accedo a la pagina mediante el login",
+            "match": {
+              "location": "SwangSteps.accedoALaPagina()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 65401000,
+              "status": "passed"
+            },
+            "line": 13,
             "name": "Ingreso correctamente a la pagina",
             "match": {
               "location": "SwangSteps.ingresoCorrectamente()"
@@ -74,12 +81,15 @@
         "tags": [
           {
             "name": "@Test"
+          },
+          {
+            "name": "@Valid"
           }
         ]
       }
     ],
     "name": "Testear la funcionalidad del ingreso a la pagina",
-    "description": "",
+    "description": "  Rule Probar todas las opciones para acceder a la pagina",
     "id": "testear-la-funcionalidad-del-ingreso-a-la-pagina",
     "keyword": "Feature",
     "uri": "src/test/resources/features/SwangLabs.feature",
