@@ -124,10 +124,10 @@
 									</tr></thead>
 									<tbody>
 	
-<tr class="s-fail" test-id="6" parent-id="1">
+<tr class="s-fail" test-id="10" parent-id="1">
 	<td><span class="w-32 avatar circle fail"><span class="badge">fail</span></span></td>
-	<td class="_600">Then Ingreso correctamente a la pagina <br/><span class="text-muted text-sm">Como usuario deseo ingresar a la pagina SwangLabs</span></td>
-	<td>0h 0m 10s+341msc</td>
+	<td class="_600">Then El usuario verifica si pudo realizar la compra <br/><span class="text-muted text-sm">Como usuario deseo comprarme un producto en la pagina Swang Labs</span></td>
+	<td>0h 0m 10s+452msc</td>
 	<td></td>
 	<td>
 	</td>
@@ -136,23 +136,23 @@
 <tr class="details">
 	<td colspan="5">
 		
-		<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //span[contains(text(),'Products')] (tried for 10 second(s) with 500 milliseconds interval)
+		<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //h2[contains(text(),'THANK YOU FOR YOUR ORDER')] (tried for 10 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
 	at MainPage.BasePage.Find(BasePage.java:45)
 	at MainPage.BasePage.elementIsDisplayed(BasePage.java:127)
-	at Page.SwangPage.menuHambur(SwangPage.java:33)
-	at Steps.SwangSteps.ingresoCorrectamente(SwangSteps.java:29)
-	at ?.Ingreso correctamente a la pagina(src/test/resources/features/SwangLabs.feature:13)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[contains(text(),'Products')]"}
-  (Session info: chrome=110.0.5481.104)
+	at Page.SwangCompraPage.compraRealizada(SwangCompraPage.java:76)
+	at Steps.SwangCompraSteps.verificoLaCompra(SwangCompraSteps.java:51)
+	at ?.El usuario verifica si pudo realizar la compra(src/test/resources/features/SwangCompra.feature:11)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h2[contains(text(),'THANK YOU FOR YOUR ORDER')]"}
+  (Session info: chrome=110.0.5481.178)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'LAPTOP-D2E3CRT8', ip: '192.168.101.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.104, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\alexi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57494}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 14d3cf957dfbaa30505f0fc82e5df791
-*** Element info: {Using=xpath, value=//span[contains(text(),'Products')]}
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 110.0.5481.178, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\alexi\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:63158}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0c7dd07d6de670419bc1b56df0e3febd
+*** Element info: {Using=xpath, value=//h2[contains(text(),'THANK YOU FOR YOUR ORDER')]}
 	at jdk.internal.reflect.GeneratedConstructorAccessor8.newInstance(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
@@ -172,8 +172,8 @@ Session ID: 14d3cf957dfbaa30505f0fc82e5df791
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
 	at MainPage.BasePage.Find(BasePage.java:45)
 	at MainPage.BasePage.elementIsDisplayed(BasePage.java:127)
-	at Page.SwangPage.menuHambur(SwangPage.java:33)
-	at Steps.SwangSteps.ingresoCorrectamente(SwangSteps.java:29)
+	at Page.SwangCompraPage.compraRealizada(SwangCompraPage.java:76)
+	at Steps.SwangCompraSteps.verificoLaCompra(SwangCompraSteps.java:51)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -258,7 +258,7 @@ Session ID: 14d3cf957dfbaa30505f0fc82e5df791
 						            </div>
 									<ul class="nav nav-xs flex-row no-border pull-right">
 <li><a href="#" class="b-l"><span class="badge badge-pull">ExtentReports</span></a></li>
-<li><a href="#" class="b-l"><span class="badge badge-pull">Feb 23, 2023 09:34:58 PM</span></a></li>
+<li><a href="#" class="b-l"><span class="badge badge-pull">Mar 1, 2023 06:15:36 PM</span></a></li>
 <li><a href="#" class="b-l"><span class="badge badge-pull">4.0</span></a></li>
 								    </ul>
 								</div>

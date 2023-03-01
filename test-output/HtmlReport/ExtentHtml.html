@@ -45,7 +45,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Feb 24, 2023 07:31:47 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Mar 1, 2023 06:16:58 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -72,8 +72,7 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@Test</a></li>
-					<li><a href='#'>@Valid</a></li>
+					<li><a href='#'>@Compra</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -142,7 +141,7 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>4</span> step(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>7</span> step(s) passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -165,8 +164,8 @@
 			<ul id='test-collection' class='test-collection'>
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Testear la funcionalidad del ingreso a la pagina</span>
-						<span class='test-time'>Feb 24, 2023 07:31:47 PM</span>
+						<span class='test-name'>Testear la compra de un producto</span>
+						<span class='test-time'>Mar 1, 2023 06:16:58 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -176,34 +175,42 @@
     <a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
     <a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
-<div class='test-desc'>Rule Probar todas las opciones para acceder a la pagina</div>
 <div class='scenariooutline node' test-id='2' status='pass'>
-    <div class='category-list'>
-        <span class='category label'>@Valid</span>
-    </div>
-    <span class='duration right label'>0h 0m 3s+237ms</span>
+    <span class='duration right label'>0h 0m 3s+147ms</span>
     <div class="bdd-test">
-        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> ScenarioOutline: Como usuario deseo ingresar a la pagina SwangLabs</div>
-        <table class='runtime-table table-striped table'><tr><td>user</td><td>password</td></tr><tr><td>standard_user</td><td>secret_sauce</td></tr></table>
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> ScenarioOutline: Como usuario deseo comprarme un producto en la pagina Swang Labs</div>
+        <table class='runtime-table table-striped table'><tr><td>credenciales1</td><td>credenciales2</td><td>credenciales3</td></tr><tr><td>asdasdasdasd</td><td>asdasdasdasd</td><td>asdasdasdasd</td></tr></table>
     </div>
     <ul class='steps'>
         <li test-id='3' class='node scenario pass' status='pass'>
-            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Como usuario deseo ingresar a la pagina SwangLabs</div>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Como usuario deseo comprarme un producto en la pagina Swang Labs</div>
             <ul class='gc steps'>
                     <li test-id='4' class='gc given pass' status='pass'>
-                        <h6 class="step-name" title="SwangSteps.ingresoALaPagina()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given Estoy en la pagina de swaglabs</h6>
+                        <h6 class="step-name" title="SwangCompraSteps.navegoALaPagina()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given El usuario navega a la pagina de Swang Labs</h6>
                             <div class="node-step"></div>
                     </li>
                     <li test-id='5' class='gc when pass' status='pass'>
-                        <h6 class="step-name" title="SwangSteps.colocoElUsuario(String,String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When Ingreso las credenciales del usuario standard_user y password secret_sauce</h6>
+                        <h6 class="step-name" title="SwangCompraSteps.enterCriteria(String,String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When El usuario ingresa las credenciales del User "standard_user" y contrasenia "secret_sauce"</h6>
                             <div class="node-step"></div>
                     </li>
                     <li test-id='6' class='gc and pass' status='pass'>
-                        <h6 class="step-name" title="SwangSteps.accedoALaPagina()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And Accedo a la pagina mediante el login</h6>
+                        <h6 class="step-name" title="SwangCompraSteps.ingresaALaPagina()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And El usuario clickea login</h6>
                             <div class="node-step"></div>
                     </li>
-                    <li test-id='7' class='gc then pass' status='pass'>
-                        <h6 class="step-name" title="SwangSteps.ingresoCorrectamente()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then Ingreso correctamente a la pagina</h6>
+                    <li test-id='7' class='gc and pass' status='pass'>
+                        <h6 class="step-name" title="SwangCompraSteps.agregoProductoAlCarrito()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And El usuario agrega un producto al carrito</h6>
+                            <div class="node-step"></div>
+                    </li>
+                    <li test-id='8' class='gc and pass' status='pass'>
+                        <h6 class="step-name" title="SwangCompraSteps.elUsuarioRealizaElCheckout()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And El usuario realiza el checkout</h6>
+                            <div class="node-step"></div>
+                    </li>
+                    <li test-id='9' class='gc and pass' status='pass'>
+                        <h6 class="step-name" title="SwangCompraSteps.colocoCredenciales(String,String,String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And El usuario agrega sus asdasdasdasd asdasdasdasd asdasdasdasd para realizar la compra</h6>
+                            <div class="node-step"></div>
+                    </li>
+                    <li test-id='10' class='gc then pass' status='pass'>
+                        <h6 class="step-name" title="SwangCompraSteps.verificoLaCompra()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then El usuario verifica si pudo realizar la compra</h6>
                             <div class="node-step"></div>
                     </li>
             </ul>
@@ -252,7 +259,7 @@
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@Test</span>
+						<span class='category-name'>@Compra</span>
 						<span class='category-status right'>
 						<span class='label pass'>2</span>
 						</span>
@@ -274,51 +281,13 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Feb 24, 2023 07:31:47 PM</td>
-										<td class='linked' test-id='1'>Testear la funcionalidad del ingreso a la pagina</td>
+										<td>Mar 1, 2023 06:16:58 PM</td>
+										<td class='linked' test-id='1'>Testear la compra de un producto</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Feb 24, 2023 07:31:47 PM</td>
-										<td class='linked' test-id='3'>Testear la funcionalidad del ingreso a la pagina.Como usuario deseo ingresar a la pagina SwangLabs.Como usuario deseo ingresar a la pagina SwangLabs</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@Valid</span>
-						<span class='category-status right'>
-						<span class='label pass'>2</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Feb 24, 2023 07:31:47 PM</td>
-										<td class='linked' test-id='2'>Testear la funcionalidad del ingreso a la pagina.Como usuario deseo ingresar a la pagina SwangLabs</td>
-										<td><span class='test-status pass'>pass</span></td>
-									</tr>
-									<tr>
-										<td>Feb 24, 2023 07:31:47 PM</td>
-										<td class='linked' test-id='3'>Testear la funcionalidad del ingreso a la pagina.Como usuario deseo ingresar a la pagina SwangLabs.Como usuario deseo ingresar a la pagina SwangLabs</td>
+										<td>Mar 1, 2023 06:16:58 PM</td>
+										<td class='linked' test-id='3'>Testear la compra de un producto.Como usuario deseo comprarme un producto en la pagina Swang Labs.Como usuario deseo comprarme un producto en la pagina Swang Labs</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -355,25 +324,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>4</div>
+					<div class='panel-lead'>7</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Feb 24, 2023 07:31:47 PM</div>
+					<div class='panel-lead'>Mar 1, 2023 06:16:58 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Feb 24, 2023 07:31:50 PM</div>
+			 		<div class='panel-lead'>Mar 1, 2023 06:17:01 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 3s+422ms</div>
+					<div class='panel-lead'>0h 0m 3s+279ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -389,16 +358,7 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@Test</td>
-							<td>2</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@Valid</td>
+							<td>@Compra</td>
 							<td>2</td>
 							<td>0</td>
 							<td>0</td>
@@ -435,8 +395,8 @@
 				infoChild: 0,
 				debugChild: 0,
 				exceptionsChild: 0,
-				grandChildCount: 4,
-				passGrandChild: 4,
+				grandChildCount: 7,
+				passGrandChild: 7,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
@@ -449,7 +409,7 @@
 		</script>
 		<script>
 			var timeline = {
-			        "Testear la funcionalidad del ingreso a la pagina":3.237
+			        "Testear la compra de un producto":3.147
 			};
 		</script>
 		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/b65cd69/v3html/js/extent.js' type='text/javascript'></script>
