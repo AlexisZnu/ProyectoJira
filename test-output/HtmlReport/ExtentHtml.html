@@ -45,7 +45,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Mar 2, 2023 09:31:06 PM</span>
+			<span class='label blue darken-3 suite-start-time'>Mar 2, 2023 10:05:18 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -73,7 +73,7 @@
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
 					<li><a href='#'>@Test</a></li>
-					<li><a href='#'>@PassEspeciales</a></li>
+					<li><a href='#'>@OptionsValidas</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -128,7 +128,7 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> scenario(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>3</span> scenario(s) passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -142,7 +142,7 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>4</span> step(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>12</span> step(s) passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
@@ -166,7 +166,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Testear la funcionalidad del ingreso a la pagina</span>
-						<span class='test-time'>Mar 2, 2023 09:31:06 PM</span>
+						<span class='test-time'>Mar 2, 2023 10:05:18 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -179,31 +179,73 @@
 <div class='test-desc'>Rule Probar todas las opciones para acceder a la pagina</div>
 <div class='scenariooutline node' test-id='2' status='pass'>
     <div class='category-list'>
-        <span class='category label'>@PassEspeciales</span>
+        <span class='category label'>@OptionsValidas</span>
     </div>
-    <span class='duration right label'>0h 0m 3s+131ms</span>
+    <span class='duration right label'>0h 0m 8s+623ms</span>
     <div class="bdd-test">
-        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> ScenarioOutline: Login de password con caracteres especiales</div>
-        <table class='runtime-table table-striped table'><tr><td>usuario</td><td>contrasenia</td></tr><tr><td>standard_user</td><td>asdasd123124</td></tr></table>
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> ScenarioOutline: Como Tester quiero probar todas las opciones correctas para acceder a la pagina</div>
+        <table class='runtime-table table-striped table'><tr><td>username</td><td>contrasenia</td></tr><tr><td>standard_user</td><td>secret_sauce</td></tr><tr><td>problem_user</td><td>secret_sauce</td></tr><tr><td>performance_glitch_user</td><td>secret_sauce</td></tr></table>
     </div>
     <ul class='steps'>
         <li test-id='3' class='node scenario pass' status='pass'>
-            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Login de password con caracteres especiales</div>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Como Tester quiero probar todas las opciones correctas para acceder a la pagina</div>
             <ul class='gc steps'>
                     <li test-id='4' class='gc given pass' status='pass'>
                         <h6 class="step-name" title="SwangSteps.ingresoALaPagina()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given Estoy en la pagina de swaglabs</h6>
                             <div class="node-step"></div>
                     </li>
                     <li test-id='5' class='gc when pass' status='pass'>
-                        <h6 class="step-name" title="SwangSteps.passConCaracteresEspeciales(String,String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When El usuario ingresa el standard_user valido y la asdasd123124 con caracteres especiales</h6>
+                        <h6 class="step-name" title="SwangSteps.todosLosUsuariosValidos(String,String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When El usario ingresa todos los standard_user validos en el campo de texto y la secret_sauce</h6>
                             <div class="node-step"></div>
                     </li>
                     <li test-id='6' class='gc and pass' status='pass'>
-                        <h6 class="step-name" title="SwangSteps.loginDelPass()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And El usuario clickea el boton login de la aplicacion</h6>
+                        <h6 class="step-name" title="SwangSteps.credencialesValidasLogin()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And El usuario clickea el boton login luego de colocar las credenciales validas</h6>
                             <div class="node-step"></div>
                     </li>
                     <li test-id='7' class='gc then pass' status='pass'>
-                        <h6 class="step-name" title="SwangSteps.respuestaDelPass()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then valido la respuesta recibida de la aplicacion por la contrasenia escrita</h6>
+                        <h6 class="step-name" title="SwangSteps.validoTodasLasOpciones()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then verifico si logre ingresar a la pagina luego de colocar todas las opciones</h6>
+                            <div class="node-step"></div>
+                    </li>
+            </ul>
+        </li>
+        <li test-id='8' class='node scenario pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Como Tester quiero probar todas las opciones correctas para acceder a la pagina</div>
+            <ul class='gc steps'>
+                    <li test-id='9' class='gc given pass' status='pass'>
+                        <h6 class="step-name" title="SwangSteps.ingresoALaPagina()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given Estoy en la pagina de swaglabs</h6>
+                            <div class="node-step"></div>
+                    </li>
+                    <li test-id='10' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title="SwangSteps.todosLosUsuariosValidos(String,String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When El usario ingresa todos los problem_user validos en el campo de texto y la secret_sauce</h6>
+                            <div class="node-step"></div>
+                    </li>
+                    <li test-id='11' class='gc and pass' status='pass'>
+                        <h6 class="step-name" title="SwangSteps.credencialesValidasLogin()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And El usuario clickea el boton login luego de colocar las credenciales validas</h6>
+                            <div class="node-step"></div>
+                    </li>
+                    <li test-id='12' class='gc then pass' status='pass'>
+                        <h6 class="step-name" title="SwangSteps.validoTodasLasOpciones()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then verifico si logre ingresar a la pagina luego de colocar todas las opciones</h6>
+                            <div class="node-step"></div>
+                    </li>
+            </ul>
+        </li>
+        <li test-id='13' class='node scenario pass' status='pass'>
+            <div class="step-name" title=""><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Como Tester quiero probar todas las opciones correctas para acceder a la pagina</div>
+            <ul class='gc steps'>
+                    <li test-id='14' class='gc given pass' status='pass'>
+                        <h6 class="step-name" title="SwangSteps.ingresoALaPagina()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Given Estoy en la pagina de swaglabs</h6>
+                            <div class="node-step"></div>
+                    </li>
+                    <li test-id='15' class='gc when pass' status='pass'>
+                        <h6 class="step-name" title="SwangSteps.todosLosUsuariosValidos(String,String)"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>When El usario ingresa todos los performance_glitch_user validos en el campo de texto y la secret_sauce</h6>
+                            <div class="node-step"></div>
+                    </li>
+                    <li test-id='16' class='gc and pass' status='pass'>
+                        <h6 class="step-name" title="SwangSteps.credencialesValidasLogin()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>And El usuario clickea el boton login luego de colocar las credenciales validas</h6>
+                            <div class="node-step"></div>
+                    </li>
+                    <li test-id='17' class='gc then pass' status='pass'>
+                        <h6 class="step-name" title="SwangSteps.validoTodasLasOpciones()"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Then verifico si logre ingresar a la pagina luego de colocar todas las opciones</h6>
                             <div class="node-step"></div>
                     </li>
             </ul>
@@ -254,12 +296,12 @@
 					<div class='category-heading'>
 						<span class='category-name'>@Test</span>
 						<span class='category-status right'>
-						<span class='label pass'>2</span>
+						<span class='label pass'>4</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 4</span>
 							
 							
 						</div>
@@ -274,13 +316,23 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Mar 2, 2023 09:31:06 PM</td>
+										<td>Mar 2, 2023 10:05:18 PM</td>
 										<td class='linked' test-id='1'>Testear la funcionalidad del ingreso a la pagina</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Mar 2, 2023 09:31:06 PM</td>
-										<td class='linked' test-id='3'>Testear la funcionalidad del ingreso a la pagina.Login de password con caracteres especiales.Login de password con caracteres especiales</td>
+										<td>Mar 2, 2023 10:05:18 PM</td>
+										<td class='linked' test-id='3'>Testear la funcionalidad del ingreso a la pagina.Como Tester quiero probar todas las opciones correctas para acceder a la pagina.Como Tester quiero probar todas las opciones correctas para acceder a la pagina</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2023 10:05:21 PM</td>
+										<td class='linked' test-id='8'>Testear la funcionalidad del ingreso a la pagina.Como Tester quiero probar todas las opciones correctas para acceder a la pagina.Como Tester quiero probar todas las opciones correctas para acceder a la pagina</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2023 10:05:22 PM</td>
+										<td class='linked' test-id='13'>Testear la funcionalidad del ingreso a la pagina.Como Tester quiero probar todas las opciones correctas para acceder a la pagina.Como Tester quiero probar todas las opciones correctas para acceder a la pagina</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -290,14 +342,14 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@PassEspeciales</span>
+						<span class='category-name'>@OptionsValidas</span>
 						<span class='category-status right'>
-						<span class='label pass'>2</span>
+						<span class='label pass'>4</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 4</span>
 							
 							
 						</div>
@@ -312,13 +364,23 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Mar 2, 2023 09:31:06 PM</td>
-										<td class='linked' test-id='2'>Testear la funcionalidad del ingreso a la pagina.Login de password con caracteres especiales</td>
+										<td>Mar 2, 2023 10:05:18 PM</td>
+										<td class='linked' test-id='2'>Testear la funcionalidad del ingreso a la pagina.Como Tester quiero probar todas las opciones correctas para acceder a la pagina</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 									<tr>
-										<td>Mar 2, 2023 09:31:06 PM</td>
-										<td class='linked' test-id='3'>Testear la funcionalidad del ingreso a la pagina.Login de password con caracteres especiales.Login de password con caracteres especiales</td>
+										<td>Mar 2, 2023 10:05:18 PM</td>
+										<td class='linked' test-id='3'>Testear la funcionalidad del ingreso a la pagina.Como Tester quiero probar todas las opciones correctas para acceder a la pagina.Como Tester quiero probar todas las opciones correctas para acceder a la pagina</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2023 10:05:21 PM</td>
+										<td class='linked' test-id='8'>Testear la funcionalidad del ingreso a la pagina.Como Tester quiero probar todas las opciones correctas para acceder a la pagina.Como Tester quiero probar todas las opciones correctas para acceder a la pagina</td>
+										<td><span class='test-status pass'>pass</span></td>
+									</tr>
+									<tr>
+										<td>Mar 2, 2023 10:05:22 PM</td>
+										<td class='linked' test-id='13'>Testear la funcionalidad del ingreso a la pagina.Como Tester quiero probar todas las opciones correctas para acceder a la pagina.Como Tester quiero probar todas las opciones correctas para acceder a la pagina</td>
 										<td><span class='test-status pass'>pass</span></td>
 									</tr>
 								</tbody>
@@ -349,31 +411,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>3</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>4</div>
+					<div class='panel-lead'>12</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Mar 2, 2023 09:31:06 PM</div>
+					<div class='panel-lead'>Mar 2, 2023 10:05:18 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Mar 2, 2023 09:31:09 PM</div>
+			 		<div class='panel-lead'>Mar 2, 2023 10:05:27 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 3s+287ms</div>
+					<div class='panel-lead'>0h 0m 8s+762ms</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -390,7 +452,7 @@
 						</tr>
 						<tr>
 							<td>@Test</td>
-							<td>2</td>
+							<td>4</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
@@ -398,8 +460,8 @@
 							</td>
 						</tr>
 						<tr>
-							<td>@PassEspeciales</td>
-							<td>2</td>
+							<td>@OptionsValidas</td>
+							<td>4</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
@@ -425,8 +487,8 @@
 				warningParent: 0,
 				skipParent: 0,
 				exceptionsParent: 0,
-				childCount: 1,
-				passChild: 1,
+				childCount: 3,
+				passChild: 3,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
@@ -435,8 +497,8 @@
 				infoChild: 0,
 				debugChild: 0,
 				exceptionsChild: 0,
-				grandChildCount: 4,
-				passGrandChild: 4,
+				grandChildCount: 12,
+				passGrandChild: 12,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
@@ -449,7 +511,7 @@
 		</script>
 		<script>
 			var timeline = {
-			        "Testear la funcionalidad del ingreso a la pagina":3.131
+			        "Testear la funcionalidad del ingreso a la pagina":8.623
 			};
 		</script>
 		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/b65cd69/v3html/js/extent.js' type='text/javascript'></script>

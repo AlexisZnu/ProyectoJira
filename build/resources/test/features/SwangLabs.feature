@@ -87,36 +87,32 @@ Feature: Testear la funcionalidad del ingreso a la pagina
 
     @UserElevado
   Scenario Outline: Login ingresando  el usuario una cantidad elevada de caracteres
-    When El usuario en la pantalla de login con su usuario con una cantidad elevada de caracteres y una contrasenia valida
-    And El usuario ingresa el <usuario> y <contrasenia> valida
-    And El usuario clickea el boton login
-    Then valido si pude acceder a la pagina
+    When El usuario ingresa el <usuario> con una cantidad elevada de caracteres y <contrasenia> valida
+    And El usuario clickea el boton login despues de colocar elevados caracteres en el usuario
+    Then valido la respuesta recibida del programa
 
     Examples:
-      |   |   |
-      |||
+      | usuario                                  |contrasenia |
+      |mfglmdlkfmgkldmfklgmdlmfglmdflkmgldfklgdf |secret_sauce|
 
     @PassElevado
   Scenario Outline: Login ingresando un password con una cantidad elevada de caracteres
-    When El usuario en la pantalla de login con un usuario valido y una contraseia con caracteres elevados
-    And El usuario ingresa el <usuario> y la <contrasenia> valida
-    And El usuario clickea el boton login
-    Then valido si pude acceder a la pagina
+    When El usuario ingresa el <usuario> valido y <contrasenia> con una cantidad elevada de caracteres
+    And El usuario clickea el boton login despues de colocar elevados caracteres en la contrasenia
+    Then valido la respuesta recibida del programa despues de colocar esa contrasenia
 
     Examples:
-      |   |   |
-      |||
+      |usuario      |contrasenia                              |
+      |standard_user|mfglmdlkfmgkldmfklgmdlmfglmdflkmgldfklgdf|
 
    @OptionsValidas
    Scenario Outline: Como Tester quiero probar todas las opciones correctas para acceder a la pagina
-     When El usario ingresa el user <username>
-     And El usuario ingresa la contrasenia <password>
-     And El usuario clickea el boton login
-     Then verifico si logré ingresar a la pagina
+     When El usario ingresa todos los <username> validos en el campo de texto y la <contrasenia>
+     And El usuario clickea el boton login luego de colocar las credenciales validas
+     Then verifico si logre ingresar a la pagina luego de colocar todas las opciones
 
      Examples:
-     |username               |password    |
-     |          ||
-     |        ||
-     |           ||
-     |||
+     |username               |contrasenia |
+     |standard_user          |secret_sauce|
+     |problem_user           |secret_sauce|
+     |performance_glitch_user|secret_sauce|

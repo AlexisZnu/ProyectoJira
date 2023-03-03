@@ -28,7 +28,7 @@ public class SwangSteps {
 
     @Then("^Ingreso correctamente a la pagina$")
     public void ingresoCorrectamente() {
-        Assert.assertTrue("El elemento está siento mostrado", swang.menuHambur());
+        Assert.assertTrue("El elemento está siento mostrado", swang.nameAtoZ());
     }
 
 // Login con usuario invalido
@@ -147,64 +147,52 @@ public class SwangSteps {
     }
 
    //Login ingresando  el usuario una cantidad elevada de caracteres
-    @When("El usuario en la pantalla de login con su usuario con una cantidad elevada de caracteres y una contrasenia valida")
-    public void validUser(String user) {
+    @When("El usuario ingresa el (.+) con una cantidad elevada de caracteres y (.+) valida")
+    public void validUserAndPass(String user, String pass) {
         swang.enterUseCriteria(user);
+        swang.enterPassCriteria(pass);
     }
 
-    @And("^El usuario ingresa el (.+) y (.+) valida$")
-    public void validPassword(String password) {
-        swang.enterPassCriteria(password);
-    }
-
-    @And("El usuario clickea el boton login")
-    public void elUsuarioClickeaElBotonLogin() {
+    @And("El usuario clickea el boton login despues de colocar elevados caracteres en el usuario")
+    public void userElevadosCaracteresLogin() {
         swang.clickLogin();
     }
 
-    @Then("^verifico si logré ingresar a la pagina$")
-    public void Ingresologrado() {
-        Assert.assertTrue("The text Products is not there", swang.menuHambur());
+    @Then("^valido la respuesta recibida del programa$")
+    public void userRespuestaDelPrograma() {
+        Assert.assertEquals("Epic sadface: Username and password do not match any user in this service", swang.mensajeDeError());
     }
 
-   /* //Login ingresando un password con una cantidad elevada de caracteres
-    @When("El usuario en la pantalla de login con un usuario valido y una contraseia con caracteres elevados")
-    public void validUser(String user) {
+   //Login ingresando un password con una cantidad elevada de caracteres
+    @When("El usuario ingresa el (.+) valido y (.+) con una cantidad elevada de caracteres")
+    public void passCaracteresElevados(String user, String pass) {
         swang.enterUseCriteria(user);
+        swang.enterPassCriteria(pass);
     }
-
-    @And("^El usuario ingresa el (.+) y la (.+) valida$")
-    public void validPassword(String password) {
-
-    }
-
-    @And("El usuario clickea el boton login")
-    public void elUsuarioClickeaElBotonLogin() {
+    @And("El usuario clickea el boton login despues de colocar elevados caracteres en la contrasenia")
+    public void passElevadosCaracteresLogin() {
         swang.clickLogin();
     }
 
-    @Then("^verifico si logré ingresar a la pagina$")
-    public void Ingresologrado() {
-        Assert.assertTrue("The text Products is not there", swang.menuHambur());
+    @Then("^valido la respuesta recibida del programa despues de colocar esa contrasenia$")
+    public void passRespuestaDelPrograma() {
+        Assert.assertEquals("Epic sadface: Username and password do not match any user in this service", swang.mensajeDeError());
     }
 
     //Como Tester quiero probar todas las opciones correctas para acceder a la pagina
-    @When("^El usario ingresa el user (.*)$")
-    public void validUser(String user) {
+    @When("^El usario ingresa todos los (.+) validos en el campo de texto y la (.+)$")
+    public void todosLosUsuariosValidos(String user, String pass) {
         swang.enterUseCriteria(user);
+        swang.enterPassCriteria(pass);
     }
 
-    @And("^El usuario ingresa la contrasenia (.*)$")
-    public void validPassword(String password) {
-    }
-
-    @And("El usuario clickea el boton login")
-    public void elUsuarioClickeaElBotonLogin() {
+    @And("El usuario clickea el boton login luego de colocar las credenciales validas")
+    public void credencialesValidasLogin() {
         swang.clickLogin();
     }
 
-    @Then("^verifico si logré ingresar a la pagina$")
-    public void Ingresologrado() {
-        Assert.assertTrue("The text Products is not there", swang.menuHambur());
-    }*/
+    @Then("^verifico si logre ingresar a la pagina luego de colocar todas las opciones$")
+    public void validoTodasLasOpciones() {
+        Assert.assertTrue("The text Products is not there", swang.nameAtoZ());
+    }
 }

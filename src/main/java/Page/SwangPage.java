@@ -1,7 +1,6 @@
 package Page;
 
 import MainPage.BasePage;
-import org.openqa.selenium.NoSuchElementException;
 
 public class SwangPage extends BasePage {
 
@@ -30,7 +29,7 @@ public class SwangPage extends BasePage {
         clickElement(login);
     }
 
-    public boolean menuHambur(){
+    public boolean nameAtoZ(){
         return elementIsDisplayed(menú);
     }
 

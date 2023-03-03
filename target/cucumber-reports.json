@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2735838600,
+              "duration": 2474152800,
               "status": "passed"
             },
             "line": 7,
@@ -24,56 +24,56 @@
         ]
       },
       {
-        "line": 86,
-        "name": "Login de password con caracteres especiales",
+        "line": 116,
+        "name": "Como Tester quiero probar todas las opciones correctas para acceder a la pagina",
         "description": "",
-        "id": "testear-la-funcionalidad-del-ingreso-a-la-pagina;login-de-password-con-caracteres-especiales;;2",
+        "id": "testear-la-funcionalidad-del-ingreso-a-la-pagina;como-tester-quiero-probar-todas-las-opciones-correctas-para-acceder-a-la-pagina;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 309806100,
+              "duration": 285818700,
               "status": "passed"
             },
-            "line": 80,
-            "name": "El usuario ingresa el standard_user valido y la asdasd123124 con caracteres especiales",
+            "line": 110,
+            "name": "El usario ingresa todos los standard_user validos en el campo de texto y la secret_sauce",
             "match": {
               "arguments": [
                 {
                   "val": "standard_user",
-                  "offset": 22
+                  "offset": 28
                 },
                 {
-                  "val": "asdasd123124",
-                  "offset": 48
+                  "val": "secret_sauce",
+                  "offset": 76
                 }
               ],
-              "location": "SwangSteps.passConCaracteresEspeciales(String,String)"
+              "location": "SwangSteps.todosLosUsuariosValidos(String,String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 71840800,
+              "duration": 92618300,
               "status": "passed"
             },
-            "line": 81,
-            "name": "El usuario clickea el boton login de la aplicacion",
+            "line": 111,
+            "name": "El usuario clickea el boton login luego de colocar las credenciales validas",
             "match": {
-              "location": "SwangSteps.loginDelPass()"
+              "location": "SwangSteps.credencialesValidasLogin()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 41336900,
+              "duration": 48492500,
               "status": "passed"
             },
-            "line": 82,
-            "name": "valido la respuesta recibida de la aplicacion por la contrasenia escrita",
+            "line": 112,
+            "name": "verifico si logre ingresar a la pagina luego de colocar todas las opciones",
             "match": {
-              "location": "SwangSteps.respuestaDelPass()"
+              "location": "SwangSteps.validoTodasLasOpciones()"
             },
             "keyword": "Then "
           }
@@ -83,7 +83,177 @@
             "name": "@Test"
           },
           {
-            "name": "@PassEspeciales"
+            "name": "@OptionsValidas"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 48754100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Estoy en la pagina de swaglabs",
+            "match": {
+              "location": "SwangSteps.ingresoALaPagina()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 117,
+        "name": "Como Tester quiero probar todas las opciones correctas para acceder a la pagina",
+        "description": "",
+        "id": "testear-la-funcionalidad-del-ingreso-a-la-pagina;como-tester-quiero-probar-todas-las-opciones-correctas-para-acceder-a-la-pagina;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 206377400,
+              "status": "passed"
+            },
+            "line": 110,
+            "name": "El usario ingresa todos los problem_user validos en el campo de texto y la secret_sauce",
+            "match": {
+              "arguments": [
+                {
+                  "val": "problem_user",
+                  "offset": 28
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 75
+                }
+              ],
+              "location": "SwangSteps.todosLosUsuariosValidos(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 66407400,
+              "status": "passed"
+            },
+            "line": 111,
+            "name": "El usuario clickea el boton login luego de colocar las credenciales validas",
+            "match": {
+              "location": "SwangSteps.credencialesValidasLogin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 35000800,
+              "status": "passed"
+            },
+            "line": 112,
+            "name": "verifico si logre ingresar a la pagina luego de colocar todas las opciones",
+            "match": {
+              "location": "SwangSteps.validoTodasLasOpciones()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Test"
+          },
+          {
+            "name": "@OptionsValidas"
+          }
+        ]
+      },
+      {
+        "line": 6,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 50227400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Estoy en la pagina de swaglabs",
+            "match": {
+              "location": "SwangSteps.ingresoALaPagina()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 118,
+        "name": "Como Tester quiero probar todas las opciones correctas para acceder a la pagina",
+        "description": "",
+        "id": "testear-la-funcionalidad-del-ingreso-a-la-pagina;como-tester-quiero-probar-todas-las-opciones-correctas-para-acceder-a-la-pagina;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 221427700,
+              "status": "passed"
+            },
+            "line": 110,
+            "name": "El usario ingresa todos los performance_glitch_user validos en el campo de texto y la secret_sauce",
+            "match": {
+              "arguments": [
+                {
+                  "val": "performance_glitch_user",
+                  "offset": 28
+                },
+                {
+                  "val": "secret_sauce",
+                  "offset": 86
+                }
+              ],
+              "location": "SwangSteps.todosLosUsuariosValidos(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5080374800,
+              "status": "passed"
+            },
+            "line": 111,
+            "name": "El usuario clickea el boton login luego de colocar las credenciales validas",
+            "match": {
+              "location": "SwangSteps.credencialesValidasLogin()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 34896100,
+              "status": "passed"
+            },
+            "line": 112,
+            "name": "verifico si logre ingresar a la pagina luego de colocar todas las opciones",
+            "match": {
+              "location": "SwangSteps.validoTodasLasOpciones()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Test"
+          },
+          {
+            "name": "@OptionsValidas"
           }
         ]
       }
