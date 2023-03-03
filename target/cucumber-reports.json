@@ -3,137 +3,99 @@
     "line": 2,
     "elements": [
       {
-        "line": 15,
-        "name": "Como usuario deseo comprarme un producto en la pagina Swang Labs",
+        "line": 6,
+        "name": "",
         "description": "",
-        "id": "testear-la-compra-de-un-producto;como-usuario-deseo-comprarme-un-producto-en-la-pagina-swang-labs;;2",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 2735838600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Estoy en la pagina de swaglabs",
+            "match": {
+              "location": "SwangSteps.ingresoALaPagina()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 86,
+        "name": "Login de password con caracteres especiales",
+        "description": "",
+        "id": "testear-la-funcionalidad-del-ingreso-a-la-pagina;login-de-password-con-caracteres-especiales;;2",
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 2109449400,
+              "duration": 309806100,
               "status": "passed"
             },
-            "line": 5,
-            "name": "El usuario navega a la pagina de Swang Labs",
-            "match": {
-              "location": "SwangCompraSteps.navegoALaPagina()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 289379600,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "El usuario ingresa las credenciales del User \"standard_user\" y contrasenia \"secret_sauce\"",
+            "line": 80,
+            "name": "El usuario ingresa el standard_user valido y la asdasd123124 con caracteres especiales",
             "match": {
               "arguments": [
                 {
                   "val": "standard_user",
-                  "offset": 46
+                  "offset": 22
                 },
                 {
-                  "val": "secret_sauce",
-                  "offset": 76
+                  "val": "asdasd123124",
+                  "offset": 48
                 }
               ],
-              "location": "SwangCompraSteps.enterCriteria(String,String)"
+              "location": "SwangSteps.passConCaracteresEspeciales(String,String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 92228700,
+              "duration": 71840800,
               "status": "passed"
             },
-            "line": 7,
-            "name": "El usuario clickea login",
+            "line": 81,
+            "name": "El usuario clickea el boton login de la aplicacion",
             "match": {
-              "location": "SwangCompraSteps.ingresaALaPagina()"
+              "location": "SwangSteps.loginDelPass()"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 61983400,
+              "duration": 41336900,
               "status": "passed"
             },
-            "line": 8,
-            "name": "El usuario agrega un producto al carrito",
+            "line": 82,
+            "name": "valido la respuesta recibida de la aplicacion por la contrasenia escrita",
             "match": {
-              "location": "SwangCompraSteps.agregoProductoAlCarrito()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 106125100,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "El usuario realiza el checkout",
-            "match": {
-              "location": "SwangCompraSteps.elUsuarioRealizaElCheckout()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 361564300,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "El usuario agrega sus asdasdasdasd asdasdasdasd asdasdasdasd para realizar la compra",
-            "match": {
-              "arguments": [
-                {
-                  "val": "asdasdasdasd",
-                  "offset": 22
-                },
-                {
-                  "val": "asdasdasdasd",
-                  "offset": 35
-                },
-                {
-                  "val": "asdasdasdasd",
-                  "offset": 48
-                }
-              ],
-              "location": "SwangCompraSteps.colocoCredenciales(String,String,String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 156905200,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "El usuario verifica si pudo realizar la compra",
-            "match": {
-              "location": "SwangCompraSteps.verificoLaCompra()"
+              "location": "SwangSteps.respuestaDelPass()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@Compra"
+            "name": "@Test"
+          },
+          {
+            "name": "@PassEspeciales"
           }
         ]
       }
     ],
-    "name": "Testear la compra de un producto",
-    "description": "",
-    "id": "testear-la-compra-de-un-producto",
+    "name": "Testear la funcionalidad del ingreso a la pagina",
+    "description": "  Rule Probar todas las opciones para acceder a la pagina",
+    "id": "testear-la-funcionalidad-del-ingreso-a-la-pagina",
     "keyword": "Feature",
-    "uri": "src/test/resources/features/SwangCompra.feature",
+    "uri": "src/test/resources/features/SwangLabs.feature",
     "tags": [
       {
-        "name": "@Compra",
+        "name": "@Test",
         "type": "Tag",
         "location": {
           "line": 1,
